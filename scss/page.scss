@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100%;
+
+  &__footer-inner {
+    margin: auto auto 0;
+  }
+}
