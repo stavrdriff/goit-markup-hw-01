@@ -1,5 +1,3 @@
-@use "sass:math";
-
 :root {
   // base styles
   --rocket-body-font-size: 16px;
@@ -34,32 +32,32 @@ html {
 
 // typography styles
 
-%base-styles-headings {
+.base-styles-headings {
   font-family: var(--rocket-font-primary);
   font-weight: 700;
 }
 
-%base-styles-h1,
+.base-styles-h1,
 h1 {
-  @extend %base-styles-headings;
+  @extend .base-styles-headings;
 
   font-size: 3.5rem;
   line-height: (3.75 / 3.5);
   letter-spacing: 1.12px;
 }
 
-%base-styles-h2,
+.base-styles-h2,
 h2 {
-  @extend %base-styles-headings;
+  @extend .base-styles-headings;
 
   font-size: 2.25rem;
   line-height: (2.5 / 2.25);
   letter-spacing: 0.72px;
 }
 
-%base-styles-h3,
+.base-styles-h3,
 h3 {
-  @extend %base-styles-headings;
+  @extend .base-styles-headings;
 
   font-size: 1.25rem;
   font-weight: 500;
@@ -67,7 +65,7 @@ h3 {
   letter-spacing: 0.4px;
 }
 
-%base-styles-text {
+.base-styles-text {
   font-family: var(--rocket-font-primary);
   font-size: 1rem;
   font-weight: 400;
@@ -75,31 +73,31 @@ h3 {
   letter-spacing: 0.32px;
 }
 
-%base-styles-text-sm {
-  @extend %base-styles-text;
+.base-styles-text-sm {
+  @extend .base-styles-text;
 
   font-size: .75rem;
   line-height: (.875 / .75);
   letter-spacing: 0.48px;
 }
 
-%base-styles-text-md {
-  @extend %base-styles-text;
+.base-styles-text-md {
+  @extend .base-styles-text;
 
   font-weight: 500;
   line-height: (1.5 / 1);
   letter-spacing: 0.32px;
 }
 
-%base-styles-link {
-  @extend %base-styles-text-sm;
+.base-styles-link {
+  @extend .base-styles-text-sm;
   
   color: var(--rocket-color-links);
   text-decoration: underline;
 }
 
 button {
-  @extend %base-styles-text-md;
+  @extend .base-styles-text-md;
   
   letter-spacing: 0.64px;
 }
